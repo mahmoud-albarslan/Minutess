@@ -1,0 +1,656 @@
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+font-family: 'Cairo', sans-serif;
+font-family: 'Raleway', sans-serif;
+}
+
+.parent{
+   background-color: #eee;
+  
+}
+.container{
+   
+   margin-right: auto;
+   margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+justify-content:space-between ;
+align-items: center;
+position: relative;
+
+    
+    
+}
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  
+  .header{
+      padding: 20px;
+      position: absolute;
+      left: 0;
+      width: 100%;
+  }
+  nav{
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      margin-left: 10px;
+      margin-right: 100px;
+    
+  }
+nav ul{
+    display: flex;
+
+
+}
+ ul li {
+    text-decoration: none;
+    display: block;
+    
+    
+}
+ .nav a {
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    padding: 14px;
+    position: relative;
+    z-index: 1;
+    
+}
+  a.active,
+ .nav a:hover{
+     color:#00BCD4;
+ }
+  .logo{
+      color: rgb(255, 255, 255);
+      font-size: xx-large;
+      font-weight: bolder;
+      height: 40px;
+  }
+  .contact{
+      padding: -3px;
+      width: 125px;
+      
+
+  }
+.contact p {
+    display: contents;
+    color: #00BCD4
+}
+.contact i{
+    color:#00BCD4;
+    font-size: 20px;
+}
+p.num{
+    font-weight: bolder;
+    font-size: 30px;
+    color: white;
+}
+.landing{
+    min-height: 100vh;
+    background-image: url(../images/background-001.jpg) ;
+    background-size: cover;
+    background-color: #333;
+    backface-visibility: 50%;
+    padding-bottom: 300px;
+
+    
+}
+.landing .overlay{
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+    .landing .text .content{
+        max-width: 992px;
+       
+        
+
+    }
+    
+    .landing .text .content h2 {
+        color: #FFF;
+    font-size: 65px;
+    line-height: 50px;
+    font-weight: 400;
+    position: absolute;
+    left: 0;
+    top: 36%;
+    transform: translateY(-50%);
+    
+    padding-bottom: 50px;
+    color: white;
+    display:flex;
+    justify-content: flex-end;
+    margin-left: 180px;
+
+
+    }
+  .landing .text .content .paragraph1 {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+  
+    left: 0;
+    top: 50%;
+    transform: translateY(50%);
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  
+  .section1{
+    margin-right: auto;
+    margin-left: auto;
+    
+    padding: 10px 15px 200px 15px;
+  }
+  .section1 p{
+    color: #888;;
+}
+
+  .section1 .top-links a{
+    opacity: 20%;
+    position: relative;
+    padding-left: 100px;
+    
+  }
+  
+  .top-links a:hover{
+      opacity: 100%;
+  }
+  img{
+     max-width: 140px;
+     
+    
+  }
+
+  .paragraph2{
+      text-align: center;
+      max-width: 800px;
+      margin-left: 300px;
+      margin-right: 300px;
+      font-size: 34px;
+      padding: 100px 0 20px;
+      
+      
+  }
+  .purpose .container i{
+      color: #00BCD4;
+  }
+  
+      
+  
+  .section2{
+      margin-top: 100px;
+      margin-bottom: 200px;
+  }
+  .paragraph3{
+      color: #888;;
+  }
+  .lab img{
+    max-width: 700px;
+  }
+  input.button{
+    background-color: #00d440;
+    border-color: #00BCD4;
+    width: 150px;
+    height: 50px;
+    color: white;
+    position: relative;
+}
+input.button:hover{
+    background-color:black;
+    border-color:black
+}
+.section3{
+
+ margin: 20px auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 800px;
+  margin-bottom: 100px;
+ 
+  
+  
+}
+
+.section3 img {
+  max-width: 100%;
+  height:100%;
+}
+.section3 .text{
+  background-color: #00BCD4;
+  color: white;
+  
+  
+}
+.text h2{
+  text-align: initial;
+    font-size: 49px;
+    font-weight: 300;
+    padding-left: 70px;
+    margin-top: 130px;
+}
+.text .paragraph4 {
+  /* letter-spacing: px; */
+    width: 550px;
+    padding-left: 70px;
+    line-height: 30px;
+    margin-top: 70px;
+
+}
+  .text ul{
+    padding-left: 70px;
+    line-height: 50px;
+    margin-top: 70px;
+}
+.text ul i{
+  color: white;
+  
+
+  margin-right: 13px;
+
+  font-size: 16px;
+}
+ul li a{
+  text-decoration: none; 
+    color: rgb(248, 248, 248);
+    transition: 0.3s;
+    position: relative;
+    z-index: 1;
+    display: inline;
+}
+.section3 li a:hover{
+  color: white;
+}
+
+
+  
+.section4{
+  margin-top: 100px;
+  margin-bottom: 200px;
+
+  }
+
+  .paragraph4{
+    color: #888;;
+}
+.phone img{
+  max-width: 700px;
+}
+input.button{
+  background-color: #00BCD4;
+  border-color: #00BCD4;
+  width: 150px;
+  height: 50px;
+  color: white;
+  position: relative;
+}
+input.button:hover{
+  background-color:black;
+  border-color:black
+}
+.section5{
+  background-color: #222;
+  margin-top: 200px;
+  padding-bottom: 150px;
+}
+.section5 .mo{
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+  padding-left: 15px;
+  
+  
+}
+.first {
+  font-size: 18px;
+  color: #888;
+  line-height: 35px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  max-width: 574px;
+  padding-bottom: 100px;
+
+  text-align: center;
+  margin-left: 29%
+
+}
+.posts{
+  display: flex;
+  padding-left: 80px;
+  
+}
+.posts img{
+  width: 70%;
+  max-width: 90%;
+  
+}
+ img.feet1{
+  padding-left: 30px;
+}
+.posts h4{
+  color: white;
+}
+ .mah{
+  color: #888;
+  max-width: 300px;
+}
+.cards{
+  padding-bottom: 150px;
+}
+.cards h2{
+  text-align: center;
+  font-size: 50px;
+ font-weight: normal;
+}
+.cards .adress p{
+  text-align: center;
+  color: #888;
+  width: 1000px;
+  padding-left: 25%;
+  padding-bottom: 25px;
+}
+.box1{
+  padding: 30px 25px;
+  border: 0.5px solid #e5e5e5;
+  
+}
+.box2{
+  padding: 30px 25px;
+  border: 0.5px solid #e5e5e5;
+  
+}
+.box3{
+  padding: 30px 25px;
+  border: 0.5px solid #e5e5e5;
+  
+}
+.qute{
+  color: #888;
+  width: 300px;
+  letter-spacing: 2px;
+}
+.photo{
+  width: 54px;
+    height: 54px;
+    border-radius: 99px;   
+    float: left;
+    display: flex;
+}
+.name{
+  color: #444;
+  font-weight: bold;
+  
+}
+.company{
+  color: #00BCD4;
+  
+}
+.name , .company{
+  margin-top: 7px;
+  text-align: center;
+}
+.prices{
+  margin-top: 200px;
+  padding-bottom: 150px;
+
+}
+.prices h2{
+  text-align: center;
+  font-size: 50px;
+ font-weight: normal;
+}
+.prices .adress p{
+  text-align: center;
+  color: #888;
+  width: 1000px;
+  padding-left: 25%;
+  padding-bottom: 100px;
+
+  }
+.basic , .STANDARD, .ULTIMATE {
+  text-transform: uppercase;
+  padding: 40px 15px 20px;
+  font-size: 16px;
+  border: none;
+  letter-spacing: 2px;
+  color: #000;
+  border-radius: 0;
+  margin: 0 0 -15px;
+  box-shadow: none;
+  border: 1px solid #e5e5e5;
+  width: 24%;
+  
+}
+.PREMIUM{
+  background: #00BCD4;
+  border: none;
+  border: 22px solid #00BCD4;
+  text-transform: uppercase;
+  padding: 40px 15px 20px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: white;
+  margin: 0 0 -15px;
+  width: 28%;
+}
+.PREMIUM ul , .type , h3{
+  color: white;
+}
+.PREMIUM h3{
+  font-size: 55px;
+  font-weight: 400;
+  padding: 10px 0 0;
+}
+
+
+  .list{
+    color: #666;
+    font-size: 13px;
+    border: medium none;
+    margin: 0px;
+    text-transform: none;
+    letter-spacing: 0px;
+    padding: 12px  15px;
+
+}
+  .type{
+    font-size: 16px;
+    border: none;
+    letter-spacing: 2px;
+    color: #00BCD4;
+    border-radius: 0;
+    background: transparent;
+    margin: 0 0 -15 px;
+    padding: 0px 0 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  .pre{
+    font-size: 16px;
+    border: none;
+    letter-spacing: 3px;
+    font-weight: 800;
+  }
+  .sign{
+    background: transparent;
+    display: table;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding: 18px 15px;
+    font-size: 12px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .sign a{
+    text-decoration: none;
+  }
+  .basic h3 {
+    font-size: 55px;
+    font-weight: 400;
+    color: #000;
+    padding: 10px 0 0;
+
+  }
+  .STANDARD h3{
+    font-size: 55px;
+    font-weight: 400;
+    color: #000;
+    padding: 10px 0 0;
+  }
+  .ULTIMATE h3{
+    font-size: 55px;
+    font-weight: 400;
+    color: #000;
+    padding: 10px 0 0;
+  }
+
+  .list li{
+    color: #666;
+    font-size: 13px;
+    border: medium none;
+    margin: 0px;
+    text-transform: none;
+    letter-spacing: 0px;
+    padding: 12px 15px;
+
+  }
+  .PREMIUM li {
+    color: white;
+  }
+  .section6{
+    background-color: #333;
+    padding-bottom: 100px;
+  }
+
+  .section6 i{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-left: 48%;
+    font-size: 40px;
+    padding-top: 30px;
+    color:darkturquoise;
+    
+  }
+  .section6 h3{
+    text-align: center;
+    display: block;
+    margin-top: 60px;
+    font-size: xx-large;
+  }
+  .section6 p{
+    color: rgb(247, 240, 240);
+    width: 600px;
+    text-align: center;
+    margin-left: 27%;
+    margin-top: 30px;
+  }
+  .download input.button{
+    width: 260px;
+    margin-left: 40%;
+    margin-top: 20px;
+  }
+  .footer{
+    background-color: #222;
+    padding: 35px;
+  }
+  
+  
+  .footer h3{
+    font-size: 30px;
+    padding-left: 180px;
+    padding-bottom: 10px;
+  }
+  .social h3{
+    padding-bottom: 0;
+  }
+  
+  
+  .icons {
+    font-size: 30px;
+  }
+   .icons a{
+     color: #00BCD4;
+   }
+   .icons a:hover{
+     color: white;
+   }
+   
+     
+   
+   
+   .method i ,p {
+     color: #999;
+     font-size: 17px;
+   }
+   .social{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 50%;
+
+   }
+   .link{
+    position: relative;
+    min-height: 1px;
+
+    padding-right: 15px;
+
+    padding-left: 15px;
+   }
+   .PAYMENT{
+    position: relative;
+    min-height: 1px;
+    
+
+    padding-right: 15px;
+
+    padding-left: 15px;
+    width: 50%;
+
+   }
+   .method{
+     padding-left: 250px;
+     
+     
+   }
+  
